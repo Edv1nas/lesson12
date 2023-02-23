@@ -44,6 +44,31 @@
 # finally:
 #     print("all good but returned number maybe wrong!")
 
+'''3'''
+# from typing import Union
+
+# def name_surname(name: str, surname: str) -> str:
+#     return f"{name} {surname}"
+# try:
+#     name_print = name_surname(a,"Jonaitis")
+#     print(name_print)
+
+# except Exception as e:
+#     print(f"Error: {e}")
+
+'''4'''
+from typing import Union
+
+def number_divide(number_one: Union[int, float], number_two: Union[int, float]) -> Union:
+    return number_one / number_two
+try:
+    devided_number = number_divide(10,1)
+    print(devided_number)
+
+except ZeroDivisionError:
+    print("Error: Division by zero")
+
+
 
 
 
